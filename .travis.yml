@@ -1,2 +1,2 @@
 language: minimal
-script: printenv && git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
+script: printenv && git remote show origin | grep 'HEAD branch'
