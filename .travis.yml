@@ -1,2 +1,2 @@
 language: minimal
-script: printenv
+script: printenv && git remote show origin | grep 'HEAD branch'
